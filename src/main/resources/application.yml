@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: member-management-service
+  thymeleaf:
+    enabled: true          # Thymeleaf 템플릿 엔진 활성화
+    prefix: classpath:/templates/  # 템플릿 파일의 기본 경로
+    suffix: .html          # 템플릿 파일의 확장자
+    cache: false           # 개발 중에는 캐시 비활성화
+
+logging:
+  level:
+    root: INFO             # 기본 로그 레벨 설정
+    org.springframework.web: DEBUG # 웹 관련 디버그 로그 활성화
